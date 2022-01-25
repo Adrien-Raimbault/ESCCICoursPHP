@@ -1,6 +1,6 @@
 <?php
 
-$valeur = "Michel";
+$valeur = -10;
 $resultat = "";
 
 if (is_numeric($valeur)) {
@@ -14,4 +14,4 @@ if (is_numeric($valeur)) {
 }
 else $resultat = "$valeur n'est pas un nombre";
 
-echo 
+echo $resultat;
