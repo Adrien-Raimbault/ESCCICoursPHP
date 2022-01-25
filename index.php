@@ -1,5 +1,10 @@
 <?php
 
+require_once 'fonctions.php';
+
+bonjour();
+$bjrPerso = bonjourPerso("Michel");
+
 // $valeur = -2;
 // $resultat = "";
 
