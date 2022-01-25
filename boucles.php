@@ -1,18 +1,10 @@
 <?php
 
-// Faire une boucle
+// Faire une boucle while
 
-$resultat = "<ul>";
+$toto = 0;
 
-for ($i=0 ; $i <100; $i++) {
-    if ($i % 3 == 0) {
-        $resultat .= "<li>";
-        $resultat .= $i;
-        $resultat .="</li>";
-    }
+while ($toto < 100 ){
+    echo $toto ."<br />";
+    $toto ++;
 }
-
-$resultat .= "</ul>";
-
-
-echo $resultat;
