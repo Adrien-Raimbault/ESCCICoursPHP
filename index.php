@@ -1,8 +1,12 @@
 <?php
 
 require_once 'fonctions.php';
+require_once 'constantes.php';
+
 
 bonjour();
+echo '<br />';
+
 $bjrPerso = bonjourPerso("Michel");
 
 // $valeur = -2;
@@ -43,8 +47,21 @@ else {
 }
 
 echo "La valeur est $resultat.";
+echo '<br />';
 
+// Appel de la fonction volumeCube appelée depuis 'fonctions.php'
 echo volumeCube(2,3,1);
+echo '<br />';
+
+// Appel de la constante
+var_dump(TVA);
+echo '<br />';
+
+// Appel de constante magique
+echo "<p>Afficher n° ligne: " . __LINE__ . "</p>";
+// __FILE__ : chemin fichier + nom complet
+// __DIR__: nom du dossier dans lequel se trouve le fichier
+// __FUNCTION__ : contient le nom de la fonction
 
 ?>
 
