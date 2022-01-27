@@ -43,7 +43,11 @@ else {
 }
 
 echo "La valeur est $resultat.";
+
+echo volumeCube(2,3,1);
+
 ?>
+
 
 <p><a href="boucles.php">Boucles</a></p>
 <p><a href="inclusion.php">Inclusion</a></p>

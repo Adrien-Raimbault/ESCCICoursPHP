@@ -14,3 +14,8 @@ function calculSurface (float $long, float $larg) :float
 {
     return abs($long) * abs($larg);
 }
+
+function volumeCube (float $long, float $larg, float $haut) : float
+{
+    return calculSurface($long, $larg) * abs($haut);
+}
