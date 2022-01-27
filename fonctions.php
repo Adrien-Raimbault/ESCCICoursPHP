@@ -39,6 +39,7 @@ function affTab (array $tab) : string
 
         if (is_array($tab[$i])){
             $resultat .= "C'est un tableau";
+            $resultat .= affTab($tab[$i]);
         }
         else {
             $resultat .= $tab[$i];
@@ -50,4 +51,16 @@ function affTab (array $tab) : string
 
     return $resultat;
 
+}
+
+// Fonction factorielle
+
+function factorielle (int $nombre) : int
+{
+    if ($nombre === 0) {
+        return 1;
+    }
+    else {
+        return $nombre * factorielle($nombre - 1);
+    }
 }
